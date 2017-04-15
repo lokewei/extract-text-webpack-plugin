@@ -5,6 +5,8 @@
 [![coverage][cover]][cover-url]
 [![chat][chat]][chat-url]
 
+!!![Fix](https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/42)
+
 <div align="center">
   <img width="200" height="200"
     src="https://cdn.rawgit.com/webpack-contrib/extract-text-webpack-plugin/574e3200/logo.svg">

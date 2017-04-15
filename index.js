@@ -269,7 +269,7 @@ ExtractTextPlugin.prototype.apply = function(compiler) {
 					var meta = module[NS];
 					if(meta && (!meta.options.id || meta.options.id === id)) {
 						var wasExtracted = Array.isArray(meta.content);
-						if(shouldExtract !== wasExtracted) {
+						if(shouldExtract && !wasExtracted) {
 							module[NS + "/extract"] = shouldExtract; // eslint-disable-line no-path-concat
 							compilation.rebuildModule(module, function(err) {
 								if(err) {
